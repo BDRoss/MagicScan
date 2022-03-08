@@ -5,10 +5,10 @@ I'm putting this project together to practice and learn, and hopefully to put to
 
 Currently this project is in it's infancy - I am still learning some new (to me) technologies that will make this possible.  At present, a lot of the code has been lifted from other developers, because I wanted to see actual working code, and have access to change things around and really figure out how it worked.  
 
- \####################################  
- \# Current to-do list for project,  #  
- \# updated as-needed.		   	     #  
- \####################################  
+     \####################################  
+     \# Current to-do list for project,  #  
+     \# updated as-needed.		   	     #  
+     \####################################  
  
 
 
