@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(jupyter kernelspec:*)",
+      "Bash(\"C:\\\\Users\\\\briand.ross\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\":*)",
+      "Bash(pip show:*)",
+      "Bash(pip list:*)",
+      "Bash(python build_merged_notebook.py 2>&1 && \"/c/Users/briand.ross/AppData/Local/Programs/Python/Python312/python.exe\" -c \"\nimport json, ast\nnb = json.load\\(open\\('MagicScanMerged.ipynb', encoding='utf-8'\\)\\)\ncode_cells = [c for c in nb['cells'] if c['cell_type']=='code']\nerrors = []\nfor i, c in enumerate\\(code_cells\\):\n    src = ''.join\\(c['source']\\)\n    try: ast.parse\\(src\\)\n    except SyntaxError as e: errors.append\\(\\(i, str\\(e\\)\\)\\)\nif errors:\n    for i,e in errors: print\\(f'Cell {i}: {e}'\\)\nelse:\n    print\\(f'All {len\\(code_cells\\)} code cells pass. Total cells: {len\\(nb[\\\\\"cells\\\\\"]\\)}'\\)\n\" 2>&1)"
+    ]
+  }
+}
